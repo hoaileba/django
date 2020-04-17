@@ -25,7 +25,7 @@ SECRET_KEY = 'geamj^*wwqt(uhir0l8sakll43=9&w(!$8-(7@jojhx_=eayo1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['doanxem.herokuapp.com', '127.0.0.1:8000']
+ALLOWED_HOSTS = ['doanxem.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -122,10 +122,10 @@ USE_TZ = True
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # STATIC_URL = '/static/'
 
 # Extra places for collectstatic to find static files.
 STATICFILES_DIRS = (
-    os.path.join(PROJECT_ROOT, 'static'),
+    os.path.join(BASE_DIR, 'static'),
 )
